@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">blind_test</string>
+    <string name="reply_label">reply</string>
+    <string name="label">label</string>
+</resources>

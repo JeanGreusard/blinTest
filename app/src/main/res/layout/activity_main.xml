@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:keepScreenOn="true"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="167dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="130dp"
+        android:src="@drawable/icone"
+        android:textAlignment="center" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="150dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/bt_start"
+                    android:layout_width="75dp"
+                    android:layout_height="77dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/round"
+                    android:src="@drawable/ic_play" />
+
+                <ImageButton
+                    android:id="@+id/bt_pause"
+                    android:layout_width="75dp"
+                    android:layout_height="77dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="6dp"
+                    android:background="@android:color/holo_red_light"
+                    android:src="@drawable/ic_pause" />
+
+                <ImageButton
+                    android:id="@+id/bt_stop"
+                    android:layout_width="75dp"
+                    android:layout_height="77dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="6dp"
+                    android:background="@android:color/holo_red_light"
+                    android:src="@drawable/ic_stop" />
+
+                <ImageButton
+                    android:id="@+id/bt_random"
+                    android:layout_width="75dp"
+                    android:layout_height="87dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="6dp"
+                    android:background="@drawable/round"
+                    android:src="@drawable/ic_shuffle_black_24dp" />
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</RelativeLayout>
